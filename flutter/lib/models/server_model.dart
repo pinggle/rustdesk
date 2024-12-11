@@ -336,7 +336,7 @@ class ServerModel with ChangeNotifier {
     }
     if (_inputOk) {
       parent.target?.invokeMethod("stop_input");
-      bind.mainSetOption(key: kOptionEnableKeyboard, value: 'N');
+      bind.mainSetOption(key: kOptionEnableKeyboard, value: 'Y');
     } else {
       if (parent.target != null) {
         /// the result of toggle-on depends on user actions in the settings page.
