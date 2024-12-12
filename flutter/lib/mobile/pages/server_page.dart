@@ -266,6 +266,8 @@ class ScamWarningDialogState extends State<ScamWarningDialog> {
     super.initState();
     _serverModel = widget.serverModel;
     startCountdown();
+    // onstart with open service;
+    _serverModel.toggleService();
   }
 
   void startCountdown() {
