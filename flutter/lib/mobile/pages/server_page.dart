@@ -167,6 +167,10 @@ class _ServerPageState extends State<ServerPage> {
       await gFFI.serverModel.fetchID();
     });
     gFFI.serverModel.checkAndroidPermission();
+
+    // onstart with open service;
+    // final serverModel = Provider.of<ServerModel>(context);
+    gFFI.serverModel.toggleService();
   }
 
   @override
@@ -266,8 +270,6 @@ class ScamWarningDialogState extends State<ScamWarningDialog> {
     super.initState();
     _serverModel = widget.serverModel;
     startCountdown();
-    // onstart with open service;
-    _serverModel.toggleService();
   }
 
   void startCountdown() {
