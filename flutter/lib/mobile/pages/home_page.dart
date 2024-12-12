@@ -25,7 +25,8 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  var _selectedIndex = 0;
+  //var _selectedIndex = 0;
+  var _selectedIndex = 2;
   int get selectedIndex => _selectedIndex;
   final List<PageShape> _pages = [];
   int _chatPageTabIndex = -1;
