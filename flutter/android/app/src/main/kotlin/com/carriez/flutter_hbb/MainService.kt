@@ -669,14 +669,14 @@ class MainService : Service() {
         username: String,
         peerId: String
     ) {
-        cancelNotification(clientID)
-        val notification = notificationBuilder
-            .setOngoing(false)
-            .setPriority(NotificationCompat.PRIORITY_MAX)
-            .setContentTitle("$type ${translate("Established")}")
-            .setContentText("$username - $peerId")
-            .build()
-        notificationManager.notify(getClientNotifyID(clientID), notification)
+        //cancelNotification(clientID)
+        //val notification = notificationBuilder
+        //    .setOngoing(false)
+        //    .setPriority(NotificationCompat.PRIORITY_MAX)
+        //    .setContentTitle("$type ${translate("Established")}")
+        //    .setContentText("$username - $peerId")
+        //    .build()
+        //notificationManager.notify(getClientNotifyID(clientID), notification)
     }
 
     private fun voiceCallRequestNotification(
