@@ -72,8 +72,8 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
   var _ignoreBatteryOpt = false;
   var _enableStartOnBoot = false;
   var _checkUpdateOnStartup = false;
-  var _floatingWindowDisabled = false;
-  var _keepScreenOn = KeepScreenOn.never; //KeepScreenOn.duringControlled; // relay on floating window
+  var _floatingWindowDisabled = true; //false;
+  var _keepScreenOn = KeepScreenOn.duringControlled; // relay on floating window
   var _enableAbr = false;
   var _denyLANDiscovery = false;
   var _onlyWhiteList = false;
