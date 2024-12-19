@@ -162,7 +162,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
         update = true;
         _checkUpdateOnStartup = checkUpdateOnStartup;
       }
-
+/*
       var floatingWindowDisabled =
           bind.mainGetLocalOption(key: kOptionDisableFloatingWindow) == "Y" ||
               !await AndroidPermissionManager.check(kSystemAlertWindow);
@@ -179,7 +179,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
         update = true;
         _keepScreenOn = keepScreenOn;
       }
-
+*/
       final fingerprint = await bind.mainGetFingerprint();
       if (_fingerprint != fingerprint) {
         update = true;
